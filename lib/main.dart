@@ -3,7 +3,8 @@ import 'package:provider/provider.dart';
 
 void main() {
   runApp(
-    MyApp(),
+    ChangeNotifierProvider<SwitchData>(
+        create: (context) => SwitchData(), child: MyApp()),
   );
 }
 
